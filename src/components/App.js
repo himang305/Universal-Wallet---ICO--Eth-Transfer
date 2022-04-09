@@ -3,7 +3,6 @@ import Web3 from 'web3'
 import Token from '../abis/Token.json'
 import Navbar from './Navbar'
 import Swap from './Swap'
-import Nft from './Nft'
 import Ico from './Ico'
 import Wallet from './Wallet'
 
@@ -116,12 +115,7 @@ alert(hash); })
         buyTokens={this.buyTokens}
         sellTokens={this.sellTokens}
       />
-    let content4 = <Nft
-        ethBalance={this.state.ethBalance}
-        tokenBalance={this.state.tokenBalance}
-        buyTokens={this.buyTokens}
-        sellTokens={this.sellTokens}
-      /> 
+  
 
 
     return (
@@ -180,18 +174,7 @@ alert(hash); })
           </div>
         </div>
 
-        <div className="container-fluid mt-5">
-          <div className="row">
-            <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '600px' }}>
-              <div className="content mr-auto ml-auto">
-               
-                
-                {content4}
-
-               </div>
-             </main>
-          </div>
-        </div>
+        
       </div>
     );
   }
